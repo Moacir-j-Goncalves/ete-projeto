@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- Define que o documento é HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Permite acentos (á, é, ç, etc.) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsivo (funciona bem no celular) -->
+
+    <!-- Ícone da aba do navegador (favicon) -->
+    <!-- ⚠️ Aqui tem um erro: o type está incorreto -->
+    <link rel="icon" href="icon.png.png" type="image/png">
+
+    <title>Login/Nexa.com</title> <!-- Título da aba -->
+
+    <!-- Importação de fontes do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!-- Importa o arquivo CSS -->
+    <link rel="stylesheet" href="nexa.css">
+</head>
+
+
+<body>
+
+    <!-- Card principal do login -->
+    <div class="login-card">
+
+        <!-- Logo do site -->
+        <img src="logo.png" alt="logo" class="logo-img">
+
+        <!-- Pequeno divisor com símbolo -->
+        <div class="divider-diamond">◆</div>
+
+        <!-- Formulário de login -->
+        <form id="loginForm">
+
+            <!-- Campo de usuário -->
+            <div class="form-group">
+                <label for="usuario">Usuário</label> <!-- Texto acima do input -->
+                
+                <div class="input-container">
+                    <!-- Campo de texto -->
+                    <input type="text" id="usuario" placeholder="Digite seu usuário" required>
+                </div>
+            </div>
+
+            <!-- Campo de senha -->
+            <div class="form-group">
+                <label for="senha">Senha</label>
+
+                <div class="input-container">
+                    <!-- Campo de senha (oculta os caracteres) -->
+                    <input type="password" id="senha" placeholder="Digite sua senha" required>
+
+                    <!-- Ícone de mostrar/ocultar senha -->
+                    <span class="toggle-password" onclick="togglePass()">
+                        
+                        <!-- Ícone SVG (olho) -->
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+
+                    </span>
+                </div>
+            </div>
+
+            <!-- Botão de envio do formulário -->
+            <button type="submit" class="btn-entrar">Entrar</button>
+        </form>
+
+
+        <!-- Área de links abaixo do login -->
+        <div class="footer-links">
+
+            <!-- Link de recuperação de senha -->
+            <a href="#">Esqueci a senha</a>
+
+            <!-- Linha divisória com detalhe -->
+            <div class="secondary-divider"></div>
+
+            <!-- Primeiro acesso -->
+            <p class="first-access">
+                Criar conta <a href="#"></a>
+            </p>
+            <p>teste</p>
+
+        </div>
+    </div>
+
+    <!-- Importa o JavaScript -->
+    <script src="nexa.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "Nexa",
+			"path": "../../../../../Projeto-001/Nexa"
+		},
+		{
+			"name": "nexa.01",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "nexa.01",
+		"liveServer.settings.port": 5501
+	}
+}

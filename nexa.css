@@ -1,0 +1,163 @@
+/* ===== CONFIGURAÇÃO GERAL DA PÁGINA ===== */
+body {
+    margin: 0; /* remove margens padrão do navegador */
+    padding: 0; /* remove espaçamento interno padrão */
+
+    display: flex; /* ativa flexbox */
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente */
+
+    min-height: 100vh; /* altura mínima = 100% da tela */
+
+    font-family: 'Poppins', sans-serif; /* define a fonte do site */
+    color: #4a1c1c; /* cor padrão do texto */
+
+    /* ===== FUNDO DA PÁGINA ===== */
+    background-image: url('fundonexa.png'); /* imagem de fundo */
+    background-size: cover; /* cobre toda a tela (pode cortar um pouco) */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat; /* impede repetição */
+    background-color: #000; /* cor de fundo caso sobre espaço */
+}
+
+
+/* ===== CARD DE LOGIN ===== */
+.login-card {
+    background-color: #fcf6f0; /* cor de fundo do card */
+    padding: 40px 30px; /* espaçamento interno (cima/baixo - lados) */
+    border-radius: 15px; /* bordas arredondadas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* sombra */
+    width: 100%; /* ocupa toda largura disponível */
+    max-width: 380px; /* largura máxima */
+    text-align: center; /* centraliza texto dentro do card */
+}
+
+
+/* ===== LOGO ===== */
+.logo-img {
+    width: 70px; /* largura da imagem */
+    height: auto; /* mantém proporção */
+    display: block; /* transforma em bloco */
+    margin: 0 auto 15px; /* centraliza horizontal + espaço embaixo */
+    margin-bottom: 20px; /* espaço inferior extra */
+}
+
+
+/* ===== DIVISOR COM LOSANGO ===== */
+.divider-diamond {
+    margin: 10px 0 30px; /* espaço acima e abaixo */
+    color: #d1b4b4; /* cor do símbolo */
+    font-size: 12px; /* tamanho do losango */
+}
+
+
+/* ===== GRUPO DE FORMULÁRIO ===== */
+.form-group {
+    text-align: left; /* alinha texto à esquerda */
+    margin-bottom: 20px; /* espaço entre campos */
+}
+
+
+/* ===== LABEL (TEXTO USUÁRIO/SENHA) ===== */
+label {
+    font-size: 11px; /* tamanho pequeno */
+    font-weight: 600; /* negrito leve */
+    letter-spacing: 1px; /* espaçamento entre letras */
+    margin-bottom: 8px; /* espaço abaixo */
+    text-transform: uppercase; /* deixa em maiúsculo */
+}
+
+
+/* ===== CONTAINER DO INPUT ===== */
+.input-container {
+    position: relative; /* permite posicionar ícones dentro */
+    display: flex; /* organiza conteúdo interno */
+    align-items: center; /* centraliza verticalmente */
+}
+
+
+/* ===== CAMPOS DE INPUT ===== */
+input {
+    width: 100%; /* ocupa toda largura */
+    padding: 12px 15px; /* espaço interno */
+    border: 1.5px solid #e0d5d5; /* borda */
+    border-radius: 8px; /* bordas arredondadas */
+    font-size: 14px; /* tamanho do texto */
+    outline: none; /* remove borda azul padrão */
+}
+
+
+/* ===== EFEITO AO CLICAR NO INPUT ===== */
+input:focus {
+    border-color: #4a1c1c; /* muda cor da borda ao focar */
+}
+
+
+/* ===== BOTÃO ENTRAR ===== */
+.btn-entrar {
+    width: 100%; /* largura total */
+    padding: 14px; /* altura do botão */
+    background-color: #4a1c1c; /* cor de fundo */
+    color: white; /* cor do texto */
+    border: none; /* remove borda */
+    border-radius: 8px; /* bordas arredondadas */
+    letter-spacing: 2px; /* espaçamento letras */
+    cursor: pointer; /* muda cursor para mão */
+}
+
+
+/* ===== EFEITO HOVER NO BOTÃO ===== */
+.btn-entrar:hover {
+    background-color: #351414; /* escurece ao passar o mouse */
+}
+
+
+/* ===== LINKS DO RODAPÉ ===== */
+.footer-links {
+    margin-top: 20px; /* espaço acima */
+    font-size: 13px; /* tamanho do texto */
+}
+
+
+/* ===== LINKS ===== */
+.footer-links a {
+    color: #4a1c1c; /* cor dos links */
+    text-decoration: none; /* remove sublinhado */
+}
+
+
+/* ===== LINHA DIVISÓRIA ===== */
+.secondary-divider {
+    margin: 25px 0 15px; /* espaçamento */
+    border-top: 1px solid #e0d5d5; /* linha horizontal */
+    position: relative; /* necessário para o losango */
+}
+
+
+/* ===== LOSANGO NA LINHA ===== */
+.secondary-divider::after {
+    content: "◆"; /* símbolo */
+    position: absolute; /* posicionamento livre */
+    top: -7px; /* sobe o losango */
+    left: 50%; /* centraliza horizontal */
+    transform: translateX(-50%); /* ajuste fino de centralização */
+    background: #fcf6f0; /* fundo igual ao card */
+    padding: 0 10px; /* espaço ao redor */
+    font-size: 10px; /* tamanho */
+    color: #d1b4b4; /* cor */
+}
+
+
+/* ===== TEXTO DE PRIMEIRO ACESSO ===== */
+.first-access {
+    font-size: 15px; /* tamanho pequeno */
+    color: #4a1c1c; /* cor suave */
+}
+
+
+/* ===== ÍCONE DE MOSTRAR SENHA ===== */
+.toggle-password {
+    position: absolute; /* posiciona dentro do input */
+    right: 15px; /* distância da direita */
+    cursor: pointer; /* cursor de clique */
+}
