@@ -1,0 +1,185 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== CONFIGURAÇÃO GLOBAL ===== */
+body {
+    padding-top: 70px;
+    padding-bottom: 60px;
+
+    min-height: 100vh;
+
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+
+    background-image: url('fundonexa.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* melhora leitura */
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+
+/* ===== REMOVE CAIXAS (DIVS) ===== */
+.topo,
+.rodape,
+.menu,
+.container,
+.row,
+.col-sm-4 {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+
+/* ===== MENU (SEM BARRA) ===== */
+.menu {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+.menu .btn {
+    margin: 5px;
+    background: rgba(0,0,0,0.4);
+    color: white;
+    border: none;
+    backdrop-filter: blur(5px);
+}
+
+.menu .destaque {
+    background: rgba(215, 189, 166, 0.7);
+    color: black;
+}
+
+
+/* ===== CAIXA VINHO ===== */
+.topo-box {
+    text-align: center;
+
+    padding: 30px 40px;
+    border-radius: 15px;
+
+
+    background: #4a1c1c;(90, 20, 25, 0.85); /* vinho junot 🔥 */
+    backdrop-filter: blur(6px);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* ===== LOGO ===== */
+.logo-img {
+    max-width: 90px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* ===== TEXTO ===== */
+.topo-box h2 {
+    margin: 5px 0;
+    color: #fff;
+}
+
+.topo-box p {
+    margin: 0;
+    color: #f1dede;
+    font-size: 14px;
+}
+/* ===== LOGO CENTRAL SEM ALTERAÇÃO DE COR ===== */
+.logo-footer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 50px;
+
+    opacity: 1;              /* garante visibilidade total */
+    filter: none;            /* remove qualquer efeito */
+    mix-blend-mode: normal;  /* evita mistura com fundo */
+}
+/* ===== CARD DE LOGIN (EFEITO MODERNO) ===== */
+.login-card {
+    background: rgba(255, 255, 255, 0.9); /* leve transparência */
+    backdrop-filter: blur(10px); /* efeito glass */
+    
+    padding: 40px 30px;
+    border-radius: 20px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+
+    width: 100%;
+    max-width: 380px;
+
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+
+/* ===== CONTEÚDO ===== */
+.box {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* ===== DIVISOR ===== */
+.secondary-divider {
+    margin: 30px auto;
+    width: 60%;
+    border-top: 1px solid rgba(255,255,255,0.4);
+}
+
+
+/* ===== RODAPÉ ===== */
+.rodape {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+}
+
+
+/* ===== TEXTO ESQUERDA ===== */
+.footer-text {
+    font-size: 13px;
+}
+
+
+/* ===== LOGO CENTRAL ===== */
+.logo-footer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+}
+
+
+/* ===== REDES DIREITA ===== */
+.social {
+    margin-left: auto;
+}
+
+.social a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.social a:hover {
+    text-decoration: underline;
+}

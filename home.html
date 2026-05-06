@@ -1,92 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-   
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-   
-    <title>
-    </title>
-  </head>
-  <body>
-    <noscript>Você precisa ativar o JavaScript para executar este app.</noscript>
-   <!DOCTYPE html>
-<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="icon.png.png" type="image/png">
   <title>Nexa</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="home.css">
 </head>
+
 <body>
 
-<div text-align: center class ="container"  >
-  <h2></h2>
-  <body style ="background-color: rgb(63, 17, 22);"></body>
-  
-  <button type ="button" class="btn">Home</button>
-  <button type="button" class="btn btn-#D7BDA6">Login</button>
-  <button type="button" class="btn btn-#D7BDA6">Área da empresa</button>
-  <button type="button" class="btn btn-gray">Área do cliente</button>
-  <button type="button" class="btn btn-gray">Sobre nós</button>
-  <button type="button" class="btn btn-gray">Página do associado </button>
-  <button type="button" class="btn btn-gray">Central de ajuda</button> 
-<img:LogoN.png>
-</div>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
+  <!-- MENU -->
+  <div class="menu container">
+    <button class="btn">Home</button>
+    <button class="btn destaque">Login</button>
+    <button class="btn destaque">Área da empresa</button>
+    <button class="btn">Área do cliente</button>
+    <button class="btn">Sobre nós</button>
+    <button class="btn">Página do associado</button>
+    <button class="btn">Central de ajuda</button>
+  </div>
+    <!-- Card principal do login -->
+    <div class="login-card">
 
-<div class="jumbotron text-center">
-  <body style="background-color: rgb(254, 239, 220);"></body>
-  <h1><img src="logon.png" alt="Logo" width="200" height="100"></h1>
-    <h2>Nexa</h2>
-  <p>O que você precisa perto de você.</p> 
-</div>
-  
-<div class="container">
-  <body style="background-color: rgb(255, 241, 233);"> </body>
-  <div class="row">
-    <div class="col-sm-4">
-      <h3  style="color: #f7f5f5"> 
-      Parceiros</h3>
-      <p style="color: #f7f5f5">Aqui você encontra os parceiros mais próximos</p>
-      <p></p>
+        <!-- Logo do site -->
+        <img src="logo.png" alt="logo" class="logo-img">
+
+        <!-- Pequeno divisor com símbolo -->
+        <div class="divider-diamond">◆</div>
+
+        <!-- Formulário de login -->
+        <form id="loginForm">
+
+            <!-- Campo de usuário -->
+            <div class="form-group">
+                <label for="usuario">Usuário</label> <!-- Texto acima do input -->
+                
+                <div class="input-container">
+                    <!-- Campo de texto -->
+                    <input type="text" id="usuario" placeholder="Digite seu usuário" required>
+                </div>
+            </div>
+
+            <!-- Campo de senha -->
+            <div class="form-group">
+                <label for="senha">Senha</label>
+
+                <div class="input-container">
+                    <!-- Campo de senha (oculta os caracteres) -->
+                    <input type="password" id="senha" placeholder="Digite sua senha" required>
+
+                    <!-- Ícone de mostrar/ocultar senha -->
+                    <span class="toggle-password" onclick="togglePass()">
+                        
+                        <!-- Ícone SVG (olho) -->
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+
+                    </span>
+                </div>
+            </div>
+
+            <!-- Botão de envio do formulário -->
+            <button type="submit" class="btn-entrar">Entrar</button>
+        </form>
+
+
+        <!-- Área de links abaixo do login -->
+        <div class="footer-links">
+
+            <!-- Link de recuperação de senha -->
+            <a href="#">Esqueci a senha</a>
+
+            <!-- Linha divisória com detalhe -->
+            <div class="secondary-divider"></div>
+
+            <!-- Primeiro acesso -->
+            <p class="first-access">
+                Criar conta <a href="http://127.0.0.1:5500/home.html"></a></p>
+
+        </div>
     </div>
-    <div class="col-sm-4">
-      <h3 style="color: #f7f5f5">
-        Minha agenda</h3>
-      <p style="color: #f7f5f5">Sua agenda pessoal.</p>
-      <p></p>
+
+    <div class="row">
+
+      <!-- LOGO + DESCRIÇÃO -->
+      <div class="col-sm-4">
+
+        <p>Conectando você aos melhores serviços perto de você.</p>
+      </div>
+
+      <!-- LINKS -->
+      <div class="col-sm-4">
+        <h4>Links úteis</h4>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+
+      <!-- REDES SOCIAIS -->
+      <div class="col-sm-4">
+        <h4>Redes sociais</h4>
+        <div class="social">
+          <a href="#">Facebook</a><br>
+          <a href="#">Instagram</a><br>
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+
     </div>
-    <div class="col-sm-4">
-      <h3 style="color: #f7f5f5">Acesso como profissional</h3>        
-      <p style="color: #f7f5f5">Cadastre-se como parceiro você também!</p>
-      <p>..</p>
+
+    <!-- LINHA FINAL -->
+    <div class="footer-bottom">
+      <p>© 2026 Nexa - Todos os direitos reservados</p>
+    </div>
+
+  </div>
+</footer>
+      
+        <!-- Linha divisória com detalhe -->
+      <div class="secondary-divider"></div>
+
     </div>
   </div>
-</div>
-
-</body>
-</html>
 
 </body>
 </html>

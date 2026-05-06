@@ -1,0 +1,189 @@
+/* ===== RESET E CONFIGURAÇÃO GLOBAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    font-family: 'Poppins', sans-serif;
+    color: #4a1c1c;
+
+    /* ===== FUNDO COM OVERLAY ===== */
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.0),
+        rgba(0, 0, 0, 0.0)
+    ), url('/fundonexa.png'); /* use / se estiver no public */
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ===== CARD DE LOGIN (EFEITO MODERNO) ===== */
+.login-card {
+    background: rgba(255, 255, 255, 0.9); /* leve transparência */
+    backdrop-filter: blur(10px); /* efeito glass */
+    
+    padding: 40px 30px;
+    border-radius: 20px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+
+    width: 100%;
+    max-width: 380px;
+
+    text-align: center;
+    transition: 0.3s;
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ===== LOGO ===== */
+.logo-img {
+    width: 70px;
+    margin: 0 auto 20px;
+}
+
+
+/* ===== DIVISOR ===== */
+.divider-diamond {
+    margin: 10px 0 30px;
+    color: #d1b4b4;
+    font-size: 12px;
+}
+
+
+/* ===== FORMULÁRIO ===== */
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    display: block;
+}
+
+
+/* ===== INPUT ===== */
+.input-container {
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+
+    border: 1.5px solid #e0d5d5;
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+/* Efeito ao focar */
+input:focus {
+    border-color: #4a1c1c;
+    box-shadow: 0 0 8px rgba(74, 28, 28, 0.2);
+}
+
+
+/* ===== BOTÃO ===== */
+.btn-entrar {
+    width: 100%;
+    padding: 14px;
+
+    background: linear-gradient(135deg, #4a1c1c, #7a2e2e);
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    letter-spacing: 2px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover bonito */
+.btn-entrar:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+
+/* ===== LINKS ===== */
+.footer-links {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.footer-links a {
+    color: #4a1c1c;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* ===== DIVISOR COM LOSANGO ===== */
+.secondary-divider {
+    margin: 25px 0 15px;
+    border-top: 1px solid #e0d5d5;
+    position: relative;
+}
+
+.secondary-divider::after {
+    content: "◆";
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255,255,255,0.9);
+    padding: 0 10px;
+    font-size: 10px;
+    color: #d1b4b4;
+}
+
+
+/* ===== TEXTO ===== */
+.first-access {
+    font-size: 14px;
+}
+
+
+/* ===== OLHO SENHA ===== */
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 480px) {
+    .login-card {
+        padding: 30px 20px;
+    }
+}
